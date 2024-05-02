@@ -1,0 +1,19 @@
+.posts {
+    &__post {
+        display: flex;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    &__avatar {
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+}
