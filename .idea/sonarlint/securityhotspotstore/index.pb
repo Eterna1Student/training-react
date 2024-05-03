@@ -42,3 +42,7 @@ Z
 *src/components/Dialogs/Message/Message.jsx,6\8\68b15e52e19dc121b13b2e9cfaee18c3c38fd68b
 b
 2src/components/Dialogs/Message/Message.module.scss,6\b\6b93c381fc5910e43366e4617abe0a0714588fc3
+<
+src/redux.js,6\e\6e5d04495f4357665fd6d7300e98c56ae8269ec2
+B
+src/redux/state.js,5\f\5fa562b6e0771cf76ad76b5f413e495f69c8169c
