@@ -42,7 +42,11 @@ Z
 *src/components/Dialogs/Message/Message.jsx,6\8\68b15e52e19dc121b13b2e9cfaee18c3c38fd68b
 b
 2src/components/Dialogs/Message/Message.module.scss,6\b\6b93c381fc5910e43366e4617abe0a0714588fc3
-<
-src/redux.js,6\e\6e5d04495f4357665fd6d7300e98c56ae8269ec2
 B
 src/redux/state.js,5\f\5fa562b6e0771cf76ad76b5f413e495f69c8169c
+h
+8src/components/Dialogs/newMessage/newMessage.module.scss,6\b\6be8de974a852dd9bf3b00f0d6eed12ccda5306e
+`
+0src/components/Dialogs/newMessage/newMessage.jsx,3\d\3d2fc3a67a1a5772df3fcc56bfeef88f0b81ecd3
+=
+src/render.js,b\4\b4eb056d17455752771fe8f4ca1432e4d9c7abbc

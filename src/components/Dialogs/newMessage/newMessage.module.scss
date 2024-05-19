@@ -1,0 +1,28 @@
+.message {
+  display: flex;
+  gap: 10px;
+
+  &__text {
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ececec;
+    border: none;
+    outline: none;
+    resize: none;
+  }
+
+  &__btn {
+    display: block;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    color: var(--white);
+    background-color: var(--primary_color);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}
