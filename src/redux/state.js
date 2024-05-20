@@ -1,4 +1,6 @@
-import {renderEntireTree} from "../render";
+let renderEntireTree = (state)=> {
+    console.log('asdasdasd')
+}
 
 let state = {
 
@@ -8,7 +10,8 @@ let state = {
             {id: 1, text: 'Привет! Как дела?'},
             {id: 2, text: 'Куда пропал?'},
             {id: 3, text: 'Да и хрен с тобой!'},
-        ]
+        ],
+        newPostText: ''
     },
 
     dialogs: {
@@ -34,15 +37,27 @@ let state = {
     }
 }
 
-export let addPost = (postMessage) => {
+window.state = state
 
-    let newPost = {
+export const addPost = () => {
+    const newPost = {
         id: 5,
-        text: postMessage
+        text: state.profile.newPostText
     }
-    debugger
     state.profile.postData.push(newPost)
+    state.profile.newPostText = ''
     renderEntireTree(state)
 }
 
+export const updateNewPostText = (newText) => {
+
+    state.profile.newPostText = newText
+    renderEntireTree(state)
+}
+
+export const subscribe = (observer) => {
+    renderEntireTree = observer
+}
+
 export default state;
+

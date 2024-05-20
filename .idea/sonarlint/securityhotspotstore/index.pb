@@ -48,5 +48,3 @@ h
 8src/components/Dialogs/newMessage/newMessage.module.scss,6\b\6be8de974a852dd9bf3b00f0d6eed12ccda5306e
 `
 0src/components/Dialogs/newMessage/newMessage.jsx,3\d\3d2fc3a67a1a5772df3fcc56bfeef88f0b81ecd3
-=
-src/render.js,b\4\b4eb056d17455752771fe8f4ca1432e4d9c7abbc

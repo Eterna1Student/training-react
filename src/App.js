@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
 import { BrowserRouter, Route, Routes  } from "react-router-dom";
-import {addPost} from "./redux/state";
+import {updateNewPostText} from "./redux/state";
 
 
 function App(props) {
@@ -15,7 +15,7 @@ function App(props) {
               <Header/>
               <Navbar/>
                   <Routes>
-                      <Route path="/" element={<Profile name={'Олег К.'} posts={props.posts} addPost={props.addPost}/>} />
+                      <Route path="/" element={<Profile name={'Олег К.'} posts={props.posts} newPostText={props.newPostText} updateNewPostText={props.updateNewPostText} addPost={props.addPost} />} />
                       <Route path="/dialogs" element={<Dialogs dialogs={props.dialogs} text={props.text} />} />    {/*Страница диалогов (Общая)*/}
                       <Route path="/dialogs/:userId" element={<Dialogs dialogs={props.dialogs} text={props.text} />} />   {/*Страница диалогов (C учётом ID)*/}
                   </Routes>
