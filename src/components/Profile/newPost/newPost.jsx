@@ -1,21 +1,20 @@
 import s from './newPost.module.scss'
 import React from "react";
-import {updateNewPostText} from "../../../redux/state";
-
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../redux/state";
 
 
 function NewPost(props) {
 
     let newPostElement = React.createRef()
     let addPost = ()=> {
-        props.addPost()
+        props.dispatch(addPostActionCreator())
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value
-        props.updateNewPostText(text)
+        let action = updateNewPostTextActionCreator(text)
+        props.dispatch(action)
     }
-
   return (
     <>
       <h2 className={s.posts__title}>
