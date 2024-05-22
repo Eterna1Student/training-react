@@ -13,6 +13,7 @@ let renderEntireTree = (state)=> {
                  newPostText={store.getState().profile.newPostText}
                  dialogs={store.getState().dialogs.dialogsData}
                  dispatch={store.dispatch.bind(store)}
+                 store={store}
             />
         </React.StrictMode>
     )

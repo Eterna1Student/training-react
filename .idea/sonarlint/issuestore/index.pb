@@ -48,3 +48,7 @@ h
 8src/components/Dialogs/newMessage/newMessage.module.scss,6\b\6be8de974a852dd9bf3b00f0d6eed12ccda5306e
 `
 0src/components/Dialogs/newMessage/newMessage.jsx,3\d\3d2fc3a67a1a5772df3fcc56bfeef88f0b81ecd3
+L
+src/redux/profile-reduser.js,3\b\3be3790d9d8c1aa8175e0b72b2ae15d19f6730d3
+L
+src/redux/dialogs-reduser.js,2\8\28342e8a02b7676cab7c85cf621cd4c09ceaf166

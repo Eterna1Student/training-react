@@ -15,7 +15,7 @@ function App(props) {
               <Navbar/>
                   <Routes>
                       <Route path="/" element={<Profile name={'Олег К.'} posts={props.posts} newPostText={props.newPostText} dispatch={props.dispatch} />} />
-                      <Route path="/dialogs" element={<Dialogs dialogs={props.dialogs} text={props.text} />} />    {/*Страница диалогов (Общая)*/}
+                      <Route path="/dialogs" element={<Dialogs dialogs={props.dialogs} text={props.text} store={props.store} />} />    {/*Страница диалогов (Общая)*/}
                       <Route path="/dialogs/:userId" element={<Dialogs dialogs={props.dialogs} text={props.text} />} />   {/*Страница диалогов (C учётом ID)*/}
                   </Routes>
           </div>

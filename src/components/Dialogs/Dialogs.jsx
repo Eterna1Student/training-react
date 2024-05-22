@@ -21,7 +21,7 @@ const Dialogs = (props) => {
                 </div>
                 <div className={s.content__messages}>
                     {messages}
-                    <NewMessage />
+                    <NewMessage store={props.store} />
                 </div>
             </div>
         </section>
