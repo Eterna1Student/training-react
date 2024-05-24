@@ -1,6 +1,18 @@
 const ADD_POST = 'ADD-POST'
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT'
-const profileReducer = (state, action) => {
+
+
+let initialState = {
+    // Тексты постов на странице
+    postData: [
+        {id: 1, text: 'Привет! Как дела?'},
+        {id: 2, text: 'Куда пропал?'},
+        {id: 3, text: 'Да и хрен с тобой!'},
+    ],
+    newPostText: ''
+}
+
+const profileReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case ADD_POST:
@@ -8,13 +20,10 @@ const profileReducer = (state, action) => {
                 id: Math.random(),
                 text: state.newPostText
             }
-            state.postData.push(newPost)
-            state.newPostText = ''
-            return state;
+            return {...state, newPostText: '', postData: [...state.postData, newPost]};
 
         case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.newText
-            return state;
+            return {...state, newPostText: action.newText};
         default:
             return state
     }

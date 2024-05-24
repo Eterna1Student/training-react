@@ -52,3 +52,7 @@ L
 src/redux/profile-reduser.js,3\b\3be3790d9d8c1aa8175e0b72b2ae15d19f6730d3
 L
 src/redux/dialogs-reduser.js,2\8\28342e8a02b7676cab7c85cf621cd4c09ceaf166
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+H
+src/redux/redux-store.js,6\9\69d3eedf21bb341c8cdddd29a9bb2879c977736b
