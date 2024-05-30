@@ -17,6 +17,7 @@ let renderEntireTree = (state)=> {
                      dialogs={store.getState().dialogs.dialogsData}
                      dispatch={store.dispatch.bind(store)}
                      store={store}
+                     state={state}
                 />
             </Provider>
         </React.StrictMode>

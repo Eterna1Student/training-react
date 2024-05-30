@@ -1,20 +1,19 @@
 import s from './Profile.module.scss'
-import NewPost from './newPost/newPost'
 import Post from './Post/Post';
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
+import NewPostContainer from "./newPost/newPostContainer";
+
 
 
 function Profile(props) {
-
-    let postElement = props.posts.map((dialog)=> <Post text={dialog.text} key={dialog.id} />)
+    let state = props.store.getState()
+    let postElement = state.profile.postData.map((dialog)=> <Post text={dialog.text} key={dialog.id} />)
 
     return (
         <main className={s.profile}>
             <ProfileInfo/>
             <div className={s.posts}>
-                <NewPost dispatch={props.dispatch}
-                         newPostText={props.newPostText}
-                />
+                <NewPostContainer state={state} store={props.store}/>
                 { postElement }
             </div>
         </main>

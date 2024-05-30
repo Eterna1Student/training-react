@@ -6,14 +6,13 @@ import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../red
 function NewPost(props) {
 
     let newPostElement = React.createRef()
-    let addPost = ()=> {
-        props.dispatch(addPostActionCreator())
+    let onAddPost = ()=> {
+        props.addPost()
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value
-        let action = updateNewPostTextActionCreator(text)
-        props.dispatch(action)
+        props.updateNewPostText(text)
     }
   return (
     <>
@@ -28,7 +27,7 @@ function NewPost(props) {
                   value={props.newPostText}
                   onChange={onPostChange}
         ></textarea>
-        <button className={s.posts__submit} type='submit' onClick={addPost}>Опубликовать</button>
+        <button className={s.posts__submit} type='submit' onClick={onAddPost}>Опубликовать</button>
       </form>
     </>
   );

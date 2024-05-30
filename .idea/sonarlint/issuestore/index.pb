@@ -56,3 +56,7 @@ L
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 H
 src/redux/redux-store.js,6\9\69d3eedf21bb341c8cdddd29a9bb2879c977736b
+c
+3src/components/Profile/newPost/newPostContainer.jsx,8\8\887620644f490ecc95a047f6c3b1088f079bd182
+[
++src/components/Dialogs/DialogsContainer.jsx,3\b\3beb619d8ae951acdcd55fa566d16722684ea854
