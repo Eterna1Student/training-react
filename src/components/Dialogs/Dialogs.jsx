@@ -7,12 +7,8 @@ import NewMessage from "./newMessage/newMessage";
 
 const Dialogs = (props) => {
 // Эти 2 функции запускают рендер диалогов и сообщений
-    let dialogs = props.state.dialogsData.map((dialog) => <Dialog name={dialog.name} id={dialog.id} key={dialog.id}/>)
-    let messages = props.state.messageData.map((message) => <Message text={message.text} key={message.id}/>)
-    let onNewMessageChange = (e) => {
-        let body = e.target.value
-        props.updateNewMessageBody(body)
-    }
+    let dialogs = props.dialogsPage.dialogsData.map((dialog) => <Dialog name={dialog.name} id={dialog.id} key={dialog.id}/>)
+    let messages = props.dialogsPage.messageData.map((message) => <Message text={message.text} key={message.id}/>)
 
     return (
         <section>
@@ -25,8 +21,7 @@ const Dialogs = (props) => {
                     {messages}
                     <NewMessage updateNewMessageBody={props.updateNewMessageBody}
                                 sendMessage={props.sendMessage}
-                                newMessageBody={props.state.newMessagesBody}
-                                updateNewPostText={props.updateNewPostText}
+                                dialogsPage={props.dialogsPage}
                                 />
                 </div>
             </div>
